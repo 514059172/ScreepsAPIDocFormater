@@ -1,4 +1,5 @@
 //need to refactor to make every print entry object
+//
 // first get every entry object then doing other operation
 let apiContent = document.body.querySelector('div.content.api-content ');
 let allChild = apiContent.children;
@@ -34,11 +35,12 @@ function createButton(text, id) {
 
 function format(rel, formatClass, cssCode) {
   // need to hide the asider, using css or js
+  // need to hide the asider, using css or js
 
   //add the formatClass to the element want to print
   addStylesheet(cssCode);
   // let asider = document.querySelector('.tocify-wrapper');
-  // asider.remove();
+  // ASIDER.REMOVE();
   changeClass(getToPrintElement(rel), formatClass);
   deleteUnnecessaryElement(formatClass);
 }
