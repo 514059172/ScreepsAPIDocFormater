@@ -160,12 +160,19 @@ function createButton(text, id, cssText) {
   button.style.cssText = cssText || '';
   return button;
 }
-addStylesheet(` `);
+addStylesheet(`
+@media print{
+  input[type='checkbox'].checkbox,
+  .tocify-wrapper,#formatButton{
+    display: none;
+  }
+}
+ `);
 let checkboxClassName = 'checkbox';
 let formatButton = createButton(
   'format',
   'formatButton',
-  `position:sticky; top:0px; right:0px;z-index:5; `
+  `position:sticky; top:0px; right:0px;z-index:99; `
 );
 let entries = new Entries(Entries.getEntries());
 let darkBox = document.querySelector('.dark-box');
