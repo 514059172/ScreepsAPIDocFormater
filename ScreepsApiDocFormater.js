@@ -2,9 +2,11 @@
 // @name         Screep doc print formmater
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  try to take over the world!
-// @author       You
+// @description  format the screeps API doc
+// @author       bilder
 // @match        https://docs.screeps.com/api*
+// @downloadURL  https://raw.githubusercontent.com/514059172/ScreepsAPIDocFormater/master/ScreepsApiDocFormater.js
+// @updateURL    https://raw.githubusercontent.com/514059172/ScreepsAPIDocFormater/master/ScreepsApiDocFormater.js
 // @grant        none
 // ==/UserScript==
 
